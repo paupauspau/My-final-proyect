@@ -1,0 +1,35 @@
+def rango_imp(sueldo):
+    if 0.01<=sueldo<=578.52:
+        impuesto=sueldo - 0.01 * 0.0192 + 0
+        sueldo_neto=sueldo - impuesto
+    elif 578.53<=sueldo<=4910.18:
+        impuesto=sueldo - 578.53 * 0.064 + 11.11
+        sueldo_neto=sueldo - impuesto
+    elif 4910.19<=sueldo<=8629.20:
+        impuesto=sueldo - 4910.19 * 0.1088 + 288.33
+        sueldo_neto=sueldo - impuesto
+    elif 8629.21<=sueldo<=10031.07:
+        impuesto=sueldo - 8629.21 * 0.16 + 692.96
+        sueldo_neto=sueldo - impuesto
+    elif 10031.08<=sueldo<=12009.94:
+        impuesto=sueldo - 10031.08 * 0.1792 + 917.26
+        sueldo_neto=sueldo - impuesto
+    elif 12009.95<=sueldo<=24222.31:
+        impuesto=sueldo - 12009.95 * 0.2136 + 1271.87
+        sueldo_neto=sueldo - impuesto
+    elif 24222.32<=sueldo<=38177.69:
+        impuesto=sueldo - 24222.32 * 0.2352 + 3880.44
+        sueldo_neto=sueldo - impuesto
+    elif 38177.70<=sueldo<=72887.50:
+        impuesto=sueldo - 38177.70 * 0.3 + 7162.74
+        sueldo_neto=sueldo - impuesto
+    elif 72887.51<=sueldo<=97183.33:
+        impuesto=sueldo - 72887.51 * 0.32 + 17575.69
+        sueldo_neto=sueldo - impuesto
+    elif 97183.34<=sueldo<=291550.00:
+        impuesto=sueldo - 97183.34 * 0.34 + 25350.35
+        sueldo_neto=sueldo - impuesto
+    elif sueldo>=291550.01:
+        impuesto=sueldo - 291550.01 * 0.35 + 91435.02
+        sueldo_neto=sueldo - impuesto
+    return (f"tu sueldo neto es de {impuesto}")
